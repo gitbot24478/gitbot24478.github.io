@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/*animations*/
+@keyframes fadein{
+    from {background-color: white;}
+    to {background-color: lightgrey;}
+}
+
+@keyframes fadeout {
+    from {background-color: #d3d3d3;}
+    to {background-color: white;}
+}
+
+@keyframes enlarge{
+    from {padding: 50px 40px;}
+    to {padding: 100px 80px;}
+}
+
+@keyframes smoll{
+    from {padding: 100px 80px;}
+    to {padding: 50px 40px;}
+}
+
+/*main settings*/
+html, body{
+    margin: 0;
+    padding: 0;
+    max-width: 1;
+    max-height: 1;
+    background-color: white;
+    font-family: Roboto;
+}
+
+.navbar{
+    height: 88px;
+    background-color: white;
+    width: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#logo{
+    text-align: left;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.button, a{
+    animation-name: fadeout;
+    animation-duration: 0.42s;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    a:hover{
+    animation-name: fadein;
+    animation-duration: 0.35s;
+    background-color: lightgrey;
+    }
+}
+
+/*index.html*/
+header{
+    height: auto;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    background-image: url("yo\ what\ else.webp");
+    border-radius: 30px;
+    h1{
+        font-size: 78px;
+    }
+    p{
+        font-size: 24px;
+
+    }
+}
+#gameshelves{
+    background-image: url("gameshelves.jpg");
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    h1{
+        font-size: 78px;
+        padding: 100px;
+    }
+}
+
+.Why{
+    margin-top: 25px;
+    text-align: left;
+    h2{
+        padding-left: 50px;
+        padding-bottom: 10px;
+        font-size: 54px;
+    }
+    p{
+        padding: 10px 100px 0 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*content.html*/
+.blocks{
+    animation-name: smoll;
+    animation-duration: 0.65s;
+    background-color: grey;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px;
+    padding: 50px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-size: 125%
+}
+
+.blocks:hover{
+    animation-name: enlarge;
+    animation-duration: 0.48s;
+    padding: 100px 80px;
+}
+
+.GAcontent, .Gcontent{
+    text-align: center;
+}
+
+/*Game Awards*/
+.navbar2{
+    height: 128px;
+    background-color: black;
+    width: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.GAOY{
+    background-image: url();
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.titles{
+    margin: 0;
+    width: 1;
+    text-align: center;
+    padding: 40px;
+    img{
+        width: 10%;
+        height: 25%;
+        padding: 25px;
+    }
+}
+/*genres*/
+.no1{
+    text-align: center;
+    img{
+        width: 20%;
+        height: 20%;
+        display: inline-block;
+    }
+    p{
+        font-size: 24px;
+        margin: 0 200px;
+    }
+}
+table{
+    font-family: Roboto;
+    font-size: 24px;
+    margin: 150px;
+    text-align: center;
+    img{
+        width: 80px;
+        height: 100px;
+    }
+}
+th, td{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    width: auto;
+}
